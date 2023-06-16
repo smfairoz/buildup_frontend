@@ -1,0 +1,153 @@
+
+#cc0{
+    margin: 20px;
+}
+
+#cards{
+    display:flex;
+    
+    margin: 10px; 
+}
+
+h2{
+   padding:1.5%;
+}
+#c0{
+    margin: 10px; 
+}
+#c1{
+    margin: 10px; 
+}
+#c2{
+    margin: 10px; 
+}
+#c3{
+    margin: 10px; 
+}
+
+.active{
+    display: flex;
+}
+#brand{
+    color:aqua;
+}
+#brand:hover{
+color:aqua;
+font-size: larger;
+}
+#sanitary{
+    display: flex;
+    margin: 10px;
+    
+}
+#s0{
+    margin:10px;
+ 
+}
+#s1{
+    margin:10px;
+}
+#s2{
+    margin:10px;
+}
+#ss{
+    width:100%;
+    height:100%;
+}
+#ss1{
+    width:100%;
+    height:100%;
+}
+#ss2{
+    width:100%;
+    height:100%;
+}
+#Hardware{
+    display: flex;
+    margin:10px;
+}
+#h1{
+   
+    width:100%;
+    height:80%;
+}
+#h2{
+   
+    width:100%;
+    height:80%;
+}
+#hh1{
+    margin:10px;
+}
+#hh2{
+    margin:10px;
+}
+#floord{
+    display: flex;
+   margin: 10px;
+}
+#t1{
+    width:100%;
+    height:80%;
+}
+#m1{
+    width:100%;
+    height:80%;
+}
+#g1{
+    width:100%;
+    height:80%;
+}
+#tile{
+    margin:10px;
+}
+#marble{
+    margin:10px;
+}
+#granite{
+    margin:10px;
+}
+#ia{
+    display: flex;
+    margin:10px;
+}
+#interlock{
+margin:10px;
+}
+#aggregate{
+    margin:10px;
+}
+#i1{
+ width:100%;
+ height:80%;
+}
+#a1{
+    width:100%;
+    height:80%;
+   }
+   #hd{
+    display: flex;
+    margin: 10px;
+   }
+   #d1{
+   width:100%;
+   height: 80%;
+   }
+   #ll1{
+    width:100%;
+   height: 80%;
+   }
+   #decor{
+    margin:10px;
+   }
+   #light{
+    margin: 10px;
+   }
+  
+  /* .footer {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 20px;
+    margin-top: 20px;
+  } */
+
