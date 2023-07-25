@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AggregateComponent } from './aggregate/aggregate.component';
 import { BathroomComponent } from './bathroom/bathroom.component';
+import { CartComponent } from './cart/cart.component';
 import { ClosetsComponent } from './closets/closets.component';
 import { DecorComponent } from './decor/decor.component';
 import { EnquireComponent } from './enquire/enquire.component';
@@ -30,6 +31,7 @@ import { ToolsComponent } from './tools/tools.component';
 const routes: Routes = [
   {path:'hom',component:HomeComponent},
   {path:'',component:LoginComponent},
+  {path:'enqview',component:CartComponent},
   {path:'reg',component:RegisterComponent},
   { path:'pe', component: PeComponent },
   { path:'planenq',component:PlanenqComponent},

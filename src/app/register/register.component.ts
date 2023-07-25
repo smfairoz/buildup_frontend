@@ -11,7 +11,10 @@ export class RegisterComponent {
 constructor(private r:Router,private ds:DataService,private fb:FormBuilder){}
 regform=this.fb.group({
 
-  idno:['',[Validators.required,Validators.pattern("[0-9]+")]],
+  // idno:['',[Validators.required,Validators.pattern("[@]+")]],
+  // idno:['',[Validators.required,Validators.pattern("[0-9a-zA-Z@]{}")]],
+
+  idno:['',[Validators.required,Validators.pattern("")]],
   username:['',[Validators.required,Validators.pattern("[a-zA-Z 0-9]+")]],
   phone:['',[Validators.required,Validators.pattern("")]],
   password:['',[Validators.required,Validators.pattern("")]],

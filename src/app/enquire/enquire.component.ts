@@ -8,4 +8,5 @@ import { Router} from '@angular/router';
 })
 export class EnquireComponent {
 constructor(private r:Router){}
+
 }

@@ -28,6 +28,17 @@ export class DataService {
 //   localStorage.setItem('idno',JSON.stringify(this.currentidno))
 // }
 //   }
+
+saveDetails(){
+  if(this.currentuser){
+  localStorage.setItem("currentuser",JSON.stringify(this.currentuser))
+}
+
+
+if(this.currentidno){
+  localStorage.setItem('idno',JSON.stringify(this.currentidno))
+}
+}
   login(idno:any,pswd:any){
     let data={
       idno,
@@ -59,13 +70,24 @@ options.headers=header
 console.log(options)
 return options
 }
-enquirenow(r_id:any,eaddress:any,eplan:any){
+enquirenow(id_no:any,phone:any,plan:any,address:any,){
   let data={
-    r_id,
-    eaddress,
-    eplan
+    // r_id,
+    id_no,
+    phone,
+    plan,
+    address
+   
   }
   return this.hc.post ("http://localhost:3000/enquirenow",data,this.getOption())
+}
+getenquire(){
+  let data={
+    // id_no:localStorage.getItem('currentuser')
+    id_no:localStorage.getItem('currentidno')
+// id_no
+  }
+  return this.hc.post("http://localhost:3000/getenquire",data,this.getOption())
 }
 
 }

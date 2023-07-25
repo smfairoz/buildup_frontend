@@ -47,24 +47,42 @@ logform=this.fb.group({
 // }
 // }
 btnclick(){
-  let idno=this.logform.value.idno
+  let id_no=this.logform.value.idno
 
   let pass=this.logform.value.pswd
+let result=this.ds.login(id_no,pass)
+result.subscribe((resp:any)=>{
 
-  if (this.logform.valid){
-    let res=this.ds.login(idno,pass)
-    res.subscribe((resp:any)=>{
-      if(resp){
-        alert(resp.message)
-        this.r.navigateByUrl("hom")
-      }
-    },
-    (err:any)=>{
-      alert(err.error.message)
-    })
+  if(resp){
+    localStorage.setItem("currentUser",resp.currentUser)
+    localStorage.setItem("currentidno",resp.currentidno)
+    localStorage.setItem("token",JSON.stringify(resp.token))
+    alert(resp.message)
+    this.r.navigateByUrl("hom")
   }
-  else{
-    alert("id_no or password does not match")
-  }
+},
+(err)=>{
+  alert(err.error.message)
+
+})
+
 }
 }
+//   if (this.logform.valid){
+//     let res=this.ds.login(idno,pass)
+//     res.subscribe((resp:any)=>{
+//       if(resp){
+//         alert(resp.message)
+//         this.r.navigateByUrl("hom")
+//       }
+//     },
+//     (err:any)=>{
+//       alert(err.error.message)
+//     })
+//   }
+//   else{
+//     alert("id_no or password does not match")
+    
+//   }
+// }
+// }
