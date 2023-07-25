@@ -1,6 +1,24 @@
 
 #home{
-    margin-right: 80px;
+    margin-left: 78%;
+    justify-content: space-between;
+    padding: 20px;
+    /* color: #FFC90E; */
+    color:aqua;
+
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+#logout{
+    /* margin-left: 20%; */
+    padding: 20px;
+    color:aqua;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+
 }
 #cc0{
     margin: 20px;
@@ -31,12 +49,28 @@ h2{
 .active{
     display: flex;
 }
+#navbar{
+    /* background:#4CAF50; */
+    height :80px ;
+    /* justify-content: space-between; */
+
+}
 #brand{
     color:aqua;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* text-shadow: -6px 8px #FFC90E; */
+    font-size: 30px;
+font-weight: bold;
+
 }
 #brand:hover{
 color:aqua;
-font-size: larger;
+font-size: 40px;
+
+text-shadow: -6px 8px #FFC90E;
+
 }
 #sanitary{
     display: flex;
